@@ -1,0 +1,38 @@
+/**
+         * fish-desktop v3.19.1
+         *
+         * Copyright (c) 2013-present, ZTESoft, Inc.
+         * All rights reserved.
+         *
+         * This source code is licensed under the LGPL-3.0-style license found in the
+         * LICENSE file in the root directory of this source tree. 
+         *
+         */
+.zoom {
+  position: relative;
+  padding: 0;
+  display: inline-block;
+}
+.zoompup {
+  position: absolute;
+  z-index: 10;
+  visibility: hidden;
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #aaa;
+  background: #FEDE4F 50% top no-repeat;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  cursor: move;
+}
+.zoomdiv {
+  z-index: 100;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  text-align: center;
+  overflow: hidden;
+}

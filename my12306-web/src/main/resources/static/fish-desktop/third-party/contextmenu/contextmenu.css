@@ -1,0 +1,45 @@
+/**
+         * fish-desktop v3.19.1
+         *
+         * Copyright (c) 2013-present, ZTESoft, Inc.
+         * All rights reserved.
+         *
+         * This source code is licensed under the LGPL-3.0-style license found in the
+         * LICENSE file in the root directory of this source tree. 
+         *
+         */
+.dropdown-context {
+  z-index: 9999;
+}
+.dropdown-context .disabled {
+  color: rgba(0, 0, 0, 0.4);
+}
+.dropdown-context .disabled:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.4);
+  cursor: not-allowed;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+}
+.dropdown-submenu > a:before {
+  display: block;
+  float: right;
+  width: 0;
+  height: 0;
+  margin-top: 5px;
+  border-color: transparent;
+  border-left-color: #cccccc;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  content: " ";
+}
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}

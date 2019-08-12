@@ -1,0 +1,37 @@
+/**
+         * fish-desktop v3.19.1
+         *
+         * Copyright (c) 2013-present, ZTESoft, Inc.
+         * All rights reserved.
+         *
+         * This source code is licensed under the LGPL-3.0-style license found in the
+         * LICENSE file in the root directory of this source tree. 
+         *
+         */
+.loadingbar {
+  pointer-events: none;
+  transition: 350ms linear all;
+}
+.loadingbar .bar {
+  background: #29d;
+  position: fixed;
+  z-index: 10002;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-bottom-right-radius: 1px;
+  border-top-right-radius: 1px;
+  transition: width 350ms;
+}
+.loadingbar .peg {
+  position: absolute;
+  width: 70px;
+  right: 0;
+  top: 0;
+  height: 2px;
+  opacity: 0.45;
+  filter: alpha(opacity=45);
+  border-radius: 100%;
+  box-shadow: #29d 1px 0 6px 1px;
+}

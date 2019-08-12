@@ -1,0 +1,87 @@
+/**
+         * fish-desktop v3.19.1
+         *
+         * Copyright (c) 2013-present, ZTESoft, Inc.
+         * All rights reserved.
+         *
+         * This source code is licensed under the LGPL-3.0-style license found in the
+         * LICENSE file in the root directory of this source tree. 
+         *
+         */
+.underline,
+.underline-link {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+.underline[disabled] {
+  background-color: #eeeeee;
+  cursor: not-allowed;
+}
+.underline-link:hover,
+.underline-link:focus {
+  text-decoration: none;
+}
+textarea.underline {
+  height: auto;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 3px;
+}
+.ui-selectmenu-menu {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.ui-selectmenu-menu .ui-menu {
+  overflow: auto;
+  max-height: 300px;
+}
+.ui-selectmenu-menu .ui-menu .ui-selectmenu-optgroup {
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 2px 0.4em;
+  margin: 0.5em 0 0 0;
+  height: auto;
+  border: 0;
+}
+.ui-selectmenu-open {
+  display: block;
+}
+.ui-selectmenu-button {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.ui-selectmenu-button .glyphicon {
+  right: 0.5em;
+  left: auto;
+  margin-top: -7px;
+  position: absolute;
+  top: 50%;
+}
+.ui-selectmenu-button .ui-selectmenu-text {
+  width: 89.5%;
+  width: calc(84%);
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

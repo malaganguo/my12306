@@ -1,0 +1,136 @@
+/**
+         * fish-desktop v3.19.1
+         *
+         * Copyright (c) 2013-present, ZTESoft, Inc.
+         * All rights reserved.
+         *
+         * This source code is licensed under the LGPL-3.0-style license found in the
+         * LICENSE file in the root directory of this source tree. 
+         *
+         */
+.ui-suspend {
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  right: -100px;
+  top: 130px;
+  width: 132px;
+}
+.ui-suspend li {
+  width: 132px;
+  list-style-type: none;
+  background-color: #333;
+  text-align: center;
+  color: #efefef;
+  height: 32px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+}
+.ui-suspend li:hover {
+  background-color: #333;
+  margin-left: -100px;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+}
+.ui-suspend li p {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 100px;
+  line-height: 32px;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ui-suspend .suspend-icon-facebook {
+  background: url('img/social.png') no-repeat;
+  background-position: 0px 0px;
+  background-size: auto 100%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  float: left;
+}
+.ui-suspend .suspend-icon-pinterest {
+  background: url('img/social.png') no-repeat;
+  background-position: -64px 0px;
+  background-size: auto 100%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  float: left;
+}
+.ui-suspend .suspend-icon-rss {
+  background: url('img/social.png') no-repeat;
+  background-position: -96px 0px;
+  background-size: auto 100%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  float: left;
+}
+.ui-suspend .suspend-icon-twitter {
+  background: url('img/social.png') no-repeat;
+  background-position: -128px 0px;
+  background-size: auto 100%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  float: left;
+}
+.ui-suspend.left {
+  left: -100px;
+}
+.ui-suspend.left li:hover {
+  margin-left: 100px;
+}
+.ui-suspend.left .suspend-icon-facebook {
+  background: url('img/social.png') no-repeat;
+  background-position: 0px 0px;
+  background-size: auto 100%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  float: right;
+}
+.ui-suspend.left .suspend-icon-pinterest {
+  background: url('img/social.png') no-repeat;
+  background-position: -64px 0px;
+  background-size: auto 100%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  float: right;
+}
+.ui-suspend.left .suspend-icon-rss {
+  background: url('img/social.png') no-repeat;
+  background-position: -96px 0px;
+  background-size: auto 100%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  float: right;
+}
+.ui-suspend.left .suspend-icon-twitter {
+  background: url('img/social.png') no-repeat;
+  background-position: -128px 0px;
+  background-size: auto 100%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  float: right;
+}

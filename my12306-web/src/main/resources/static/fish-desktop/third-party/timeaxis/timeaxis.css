@@ -1,0 +1,170 @@
+/**
+         * fish-desktop v3.19.1
+         *
+         * Copyright (c) 2013-present, ZTESoft, Inc.
+         * All rights reserved.
+         *
+         * This source code is licensed under the LGPL-3.0-style license found in the
+         * LICENSE file in the root directory of this source tree. 
+         *
+         */
+.timeaxis {
+  list-style: none;
+  padding: 0;
+  font-size: 13px;
+}
+.timeaxis.horizontal:before,
+.timeaxis.horizontal:after {
+  content: " ";
+  display: table;
+}
+.timeaxis.horizontal:after {
+  clear: both;
+}
+.timeaxis.horizontal .timeaxis-item {
+  width: 150px;
+  float: left;
+}
+.timeaxis.horizontal .timeaxis-item:first-child .timeaxis-line {
+  top: 50px;
+  left: 50%;
+}
+.timeaxis.horizontal .timeaxis-item:last-child .timeaxis-line {
+  right: 50%;
+  left: auto;
+}
+.timeaxis.horizontal .timeaxis-item .timeaxis-line {
+  width: 100%;
+  height: 1px;
+  left: 1px;
+  top: 50px;
+  border-top: 1px dashed #c2c3c3;
+}
+.timeaxis.horizontal .timeaxis-body {
+  text-align: center;
+  padding: 25px 10px 10px;
+  color: #f69d01;
+}
+.timeaxis.horizontal .timeaxis-circle {
+  left: 50%;
+  top: 42px;
+  margin-left: -8px;
+}
+.timeaxis.horizontal .timeaxis-head {
+  width: 100%;
+}
+.timeaxis.horizontal .timeaxis-label {
+  margin-top: 0;
+}
+.timeaxis.horizontal .timeaxis-label,
+.timeaxis.horizontal .timeaxis-label-sm {
+  text-align: center;
+}
+.timeaxis-line {
+  content: " ";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: 174px;
+  border-left: 1px dashed #c2c3c3;
+}
+.timeaxis-item {
+  position: relative;
+  overflow: hidden;
+}
+.timeaxis-item:first-child .timeaxis-line {
+  top: 32px;
+}
+.timeaxis-item:last-child .timeaxis-line {
+  height: 16px;
+}
+.timeaxis-head {
+  width: 135px;
+  float: left;
+}
+.timeaxis-label {
+  color: #7f7f7f;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.timeaxis-label-sm {
+  color: #444;
+}
+.timeaxis-label,
+.timeaxis-label-sm {
+  text-align: right;
+}
+.timeaxis-circle {
+  position: absolute;
+  top: 16px;
+  left: 166px;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  border: 1px solid #c2c3c3;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+}
+.timeaxis-circle:before {
+  content: " ";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: block;
+  background-color: #c2c3c3;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -4px;
+  margin-top: -4px;
+}
+.timeaxis-body {
+  padding: 10px 10px 15px 77px;
+  overflow: hidden;
+}
+.timeaxis-body-head {
+  font-size: 14px;
+  color: #f69d01;
+  margin-bottom: 8px;
+}
+.timeaxis-body-content {
+  color: #444;
+}
+.timeaxis-blue .timeaxis-circle {
+  border-color: #2496f5;
+}
+.timeaxis-blue .timeaxis-circle:before {
+  background-color: #2496f5;
+}
+.timeaxis-blue .timeaxis-body-head {
+  color: #2496f5;
+}
+.timeaxis-blue .timeaxis-body-content {
+  color: #2496f5;
+}
+.timeaxis-green .timeaxis-circle {
+  border-color: #5faf00;
+}
+.timeaxis-green .timeaxis-circle:before {
+  background-color: #5faf00;
+}
+.timeaxis-green .timeaxis-body-head {
+  color: #5faf00;
+}
+.timeaxis-green .timeaxis-body-content {
+  color: #5faf00;
+}
+.timeaxis-gray .timeaxis-circle {
+  border-color: #c2c3c3;
+}
+.timeaxis-gray .timeaxis-circle:before {
+  background-color: #c2c3c3;
+}
+.timeaxis-gray .timeaxis-body-head {
+  color: #f69d01;
+}
+.timeaxis-gray .timeaxis-body-content {
+  color: #444;
+}

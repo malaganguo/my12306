@@ -1,0 +1,194 @@
+/**
+         * fish-desktop v3.19.1
+         *
+         * Copyright (c) 2013-present, ZTESoft, Inc.
+         * All rights reserved.
+         *
+         * This source code is licensed under the LGPL-3.0-style license found in the
+         * LICENSE file in the root directory of this source tree. 
+         *
+         */
+.ui-splitter {
+  position: relative;
+  height: 300px;
+  background-color: #ffffff;
+  border: 1px solid #c5c5c5;
+  color: #2e2e2e;
+  -webkit-appearance: none;
+  line-height: normal;
+  outline: 0;
+}
+.ui-splitter .ui-pane {
+  overflow: hidden;
+}
+.ui-splitter .ui-pane > .ui-splitter {
+  border-width: 0;
+  overflow: hidden;
+}
+.ui-splitter .ui-pane > .ui-splitter-overlay {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: absolute;
+}
+.ui-splitter .ui-scrollable {
+  overflow: auto;
+}
+.ui-splitter .ui-ghost-splitbar,
+.ui-splitter .ui-splitbar {
+  position: absolute;
+  border-style: solid;
+  font-size: 0;
+  outline: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ui-splitter .ui-ghost-splitbar-horizontal,
+.ui-splitter .ui-splitbar-horizontal {
+  top: 0;
+  width: 4px;
+  border-width: 0;
+  background-repeat: repeat-y;
+}
+.ui-splitter .ui-ghost-splitbar-horizontal.ui-restricted-size-vertical,
+.ui-splitter .ui-splitbar-horizontal.ui-restricted-size-vertical,
+.ui-splitter .ui-ghost-splitbar-horizontal.ui-restricted-size-horizontal,
+.ui-splitter .ui-splitbar-horizontal.ui-restricted-size-horizontal {
+  background-color: #f00;
+}
+.ui-splitter .ui-ghost-splitbar-vertical,
+.ui-splitter .ui-splitbar-vertical {
+  left: 0;
+  height: 4px;
+  border-width: 0;
+  background-repeat: repeat-x;
+}
+.ui-splitter .ui-ghost-splitbar-vertical.ui-restricted-size-vertical,
+.ui-splitter .ui-splitbar-vertical.ui-restricted-size-vertical,
+.ui-splitter .ui-ghost-splitbar-vertical.ui-restricted-size-horizontal,
+.ui-splitter .ui-splitbar-vertical.ui-restricted-size-horizontal {
+  background-color: #f00;
+}
+.ui-splitter .ui-splitbar-draggable-horizontal {
+  cursor: w-resize;
+}
+.ui-splitter .ui-splitbar-draggable-vertical {
+  cursor: n-resize;
+}
+.ui-splitter .ui-restricted-size-horizontal,
+.ui-splitter .ui-restricted-size-vertical {
+  background-color: #f00;
+}
+.ui-splitter .ui-splitbar {
+  background-color: #eff0ef;
+}
+.ui-splitter .ui-splitbar .ui-resize-handle {
+  display: none;
+}
+.ui-splitter .ui-splitbar.ui-splitbar-static-horizontal,
+.ui-splitter .ui-splitbar.ui-splitbar-static-vertical {
+  width: 1px;
+}
+.ui-splitter .ui-splitbar.ui-splitbar-horizontal .icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  font-family: 'Glyphicons Halflings';
+  font-size: 10px;
+  z-index: 2;
+  transform: scale(0.85);
+  font-size: 10.2px\9;
+  transform: scale(1)\9;
+}
+.ui-splitter .ui-splitbar.ui-splitbar-horizontal .ui-collapse-prev,
+.ui-splitter .ui-splitbar.ui-splitbar-horizontal .ui-expand-next {
+  cursor: pointer;
+  display: inline-block;
+  width: 8px;
+  height: 40px;
+  border: 1px solid #e3e3e3;
+  border-right: 0;
+  right: 0;
+  background-color: #fff;
+}
+.ui-splitter .ui-splitbar.ui-splitbar-horizontal .ui-collapse-prev:after,
+.ui-splitter .ui-splitbar.ui-splitbar-horizontal .ui-expand-next:after {
+  content: "\e257";
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  left: 50%;
+  margin-left: -5px;
+}
+.ui-splitter .ui-splitbar.ui-splitbar-horizontal .ui-collapse-next,
+.ui-splitter .ui-splitbar.ui-splitbar-horizontal .ui-expand-prev {
+  cursor: pointer;
+  display: inline-block;
+  width: 8px;
+  height: 40px;
+  border: 1px solid #e3e3e3;
+  border-left: 0;
+  left: 0;
+  background-color: #fff;
+}
+.ui-splitter .ui-splitbar.ui-splitbar-horizontal .ui-collapse-next:after,
+.ui-splitter .ui-splitbar.ui-splitbar-horizontal .ui-expand-prev:after {
+  content: "\e258";
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  left: 50%;
+  margin-left: -6px;
+}
+.ui-splitter .ui-splitbar.ui-splitbar-vertical .icon {
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  font-family: 'Glyphicons Halflings';
+  font-size: 10px;
+  z-index: 2;
+  transform: scale(0.85);
+  font-size: 10.2px\9;
+  transform: scale(1)\9;
+}
+.ui-splitter .ui-splitbar.ui-splitbar-vertical .ui-collapse-prev,
+.ui-splitter .ui-splitbar.ui-splitbar-vertical .ui-expand-next {
+  cursor: pointer;
+  display: inline-block;
+  width: 40px;
+  height: 8px;
+  border: 1px solid #e3e3e3;
+  border-bottom: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+.ui-splitter .ui-splitbar.ui-splitbar-vertical .ui-collapse-prev:after,
+.ui-splitter .ui-splitbar.ui-splitbar-vertical .ui-expand-next:after {
+  content: "\e260";
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  left: 50%;
+  margin-left: -6px;
+}
+.ui-splitter .ui-splitbar.ui-splitbar-vertical .ui-collapse-next,
+.ui-splitter .ui-splitbar.ui-splitbar-vertical .ui-expand-prev {
+  cursor: pointer;
+  display: inline-block;
+  width: 40px;
+  height: 8px;
+  border: 1px solid #e3e3e3;
+  border-top: 0;
+  top: 0;
+  background-color: #fff;
+}
+.ui-splitter .ui-splitbar.ui-splitbar-vertical .ui-collapse-next:after,
+.ui-splitter .ui-splitbar.ui-splitbar-vertical .ui-expand-prev:after {
+  content: "\e259";
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  left: 50%;
+  margin-left: -6px;
+}

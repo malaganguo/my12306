@@ -1,0 +1,207 @@
+/**
+         * fish-desktop v3.19.1
+         *
+         * Copyright (c) 2013-present, ZTESoft, Inc.
+         * All rights reserved.
+         *
+         * This source code is licensed under the LGPL-3.0-style license found in the
+         * LICENSE file in the root directory of this source tree. 
+         *
+         */
+.ui-helper-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none;
+}
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+  content: "";
+  display: table;
+  border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+  clear: both;
+}
+.ui-helper-clearfix {
+  min-height: 0;
+}
+.ui-state-disabled {
+  cursor: not-allowed !important;
+}
+.ui-select,
+.ui-select-menu {
+  font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+  font-size: 1.1em;
+}
+.ui-select-menu input,
+.ui-select-menu select,
+.ui-select-menu textarea,
+.ui-select-menu button {
+  font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+  font-size: 1em;
+}
+.ui-select-menu {
+  border: 1px solid #dddddd;
+  background: #eeeeee;
+  color: #333333;
+}
+.ui-select-menu a {
+  color: #333333;
+}
+.ui-select-header {
+  border: 1px solid #e78f08;
+  background: #f6a828;
+  color: #ffffff;
+  font-weight: bold;
+}
+.ui-select-header a {
+  color: #ffffff;
+}
+.ui-select.ui-state-default,
+.ui-select-menu .ui-state-default {
+  border: 1px solid #cccccc;
+  background: #f6f6f6;
+  font-weight: bold;
+  color: #1c94c4;
+}
+.ui-select-menu .ui-state-default a,
+.ui-select-menu .ui-state-default a:link,
+.ui-select-menu .ui-state-default a:visited {
+  color: #1c94c4;
+  text-decoration: none;
+}
+.ui-select.ui-state-hover,
+.ui-select-menu .ui-state-hover,
+.ui-select.ui-state-focus,
+.ui-select-menu .ui-state-focus {
+  border: 1px solid #fbcb09;
+  background: #fdf5ce;
+  font-weight: bold;
+  color: #c77405;
+}
+.ui-select-menu .ui-state-hover a,
+.ui-select-menu .ui-state-hover a:hover,
+.ui-select-menu .ui-state-hover a:link,
+.ui-select-menu .ui-state-hover a:visited,
+.ui-select-menu .ui-state-focus a,
+.ui-select-menu .ui-state-focus a:hover,
+.ui-select-menu .ui-state-focus a:link,
+.ui-select-menu .ui-state-focus a:visited {
+  color: #c77405;
+  text-decoration: none;
+}
+.ui-select.ui-state-active,
+.ui-select-menu .ui-state-active {
+  border: 1px solid #fbd850;
+  background: #ffffff;
+  font-weight: bold;
+  color: #eb8f00;
+}
+.ui-select-menu .ui-state-active a,
+.ui-select-menu .ui-state-active a:link,
+.ui-select-menu .ui-state-active a:visited {
+  color: #eb8f00;
+  text-decoration: none;
+}
+.ui-select-menu .ui-state-highlight a {
+  color: #363636;
+}
+.ui-select.ui-state-disabled,
+.ui-select-menu .ui-state-disabled,
+.ui-select.ui-state-disabled .ui-icon,
+.ui-select-menu .ui-state-disabled .ui-icon {
+  opacity: .35;
+  filter: alpha(opacity=35);
+  background-image: none;
+}
+.ui-corner-all {
+  border-radius: 4px;
+}
+.ui-select {
+  padding: 2px 0 2px 4px;
+  text-align: left;
+}
+.ui-select span.glyphicon {
+  float: right;
+  margin-right: 5px;
+}
+.ui-select-single .ui-select-checkboxes input {
+  position: absolute !important;
+  top: auto !important;
+  left: -9999px;
+}
+.ui-select-single .ui-select-checkboxes label {
+  padding: 5px !important;
+}
+.ui-select-header {
+  margin-bottom: 3px;
+  padding: 3px 0 3px 4px;
+}
+.ui-select-header ul {
+  font-size: .9em;
+}
+.ui-select-header ul li {
+  float: left;
+  padding: 0 10px 0 0;
+}
+.ui-select-header a {
+  text-decoration: none;
+}
+.ui-select-header a:hover {
+  text-decoration: underline;
+}
+.ui-select-header li.ui-select-close {
+  float: right;
+  padding-right: 0;
+  text-align: right;
+}
+.ui-select-menu {
+  position: absolute;
+  z-index: 10000;
+  display: none;
+  padding: 3px;
+  text-align: left;
+}
+.ui-select-checkboxes {
+  position: relative;
+  overflow-y: auto;
+}
+.ui-select-checkboxes label {
+  display: block;
+  padding: 3px 1px;
+  border: 1px solid transparent;
+}
+.ui-select-checkboxes label input {
+  position: relative;
+  top: 1px;
+}
+.ui-select-checkboxes li {
+  font-size: .9em;
+  clear: both;
+  padding-right: 3px;
+}
+.ui-select-checkboxes li.ui-select-optgroup-label {
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+.ui-select-checkboxes li.ui-select-optgroup-label a {
+  display: block;
+  margin: 1px 0;
+  padding: 3px;
+  text-decoration: none;
+}
+/* remove label borders in IE6 because IE6 does not support transparency */
+* html .ui-select-checkboxes label {
+  border: none;
+}
+@media print {
+  .ui-select-menu {
+    display: none;
+  }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/my12306.iml" filepath="$PROJECT_DIR$/my12306.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../my12306/my12306-interface/my12306-interface.iml" filepath="$PROJECT_DIR$/../my12306/my12306-interface/my12306-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../my12306/my12306-service/my12306-service.iml" filepath="$PROJECT_DIR$/../my12306/my12306-service/my12306-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../my12306/my12306-web/my12306-web.iml" filepath="$PROJECT_DIR$/../my12306/my12306-web/my12306-web.iml" />
+    </modules>
+  </component>
+</project>

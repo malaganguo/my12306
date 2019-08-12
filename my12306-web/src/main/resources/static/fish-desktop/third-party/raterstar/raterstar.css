@@ -1,0 +1,35 @@
+/**
+         * fish-desktop v3.19.1
+         *
+         * Copyright (c) 2013-present, ZTESoft, Inc.
+         * All rights reserved.
+         *
+         * This source code is licensed under the LGPL-3.0-style license found in the
+         * LICENSE file in the root directory of this source tree. 
+         *
+         */
+.ui-rater-star {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: url("img/star.gif") repeat-x left top;
+}
+.ui-rater-star-item,
+.ui-rater-star-item-current,
+.ui-rater-star-item-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("img/star.gif") repeat-x;
+}
+.ui-rater-star-item {
+  background-position: -100% -100%;
+}
+.ui-rater-star-item-hover {
+  background-position: left bottom;
+  cursor: pointer;
+}
+.ui-rater-star-item-current {
+  background-position: left center;
+}

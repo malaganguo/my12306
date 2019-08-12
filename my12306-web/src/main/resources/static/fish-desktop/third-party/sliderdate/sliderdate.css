@@ -1,0 +1,54 @@
+/**
+         * fish-desktop v3.19.1
+         *
+         * Copyright (c) 2013-present, ZTESoft, Inc.
+         * All rights reserved.
+         *
+         * This source code is licensed under the LGPL-3.0-style license found in the
+         * LICENSE file in the root directory of this source tree. 
+         *
+         */
+.slider-date {
+  position: relative;
+  height: 24px;
+}
+.slider-date .ui-slider {
+  margin-left: 30px;
+  margin-right: 30px;
+  top: 7px;
+}
+.slider-minus,
+.slider-plus {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.slider-minus:hover,
+.slider-plus:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.slider-minus {
+  padding-left: 3px;
+}
+.slider-plus {
+  right: 0;
+}

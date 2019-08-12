@@ -1,0 +1,57 @@
+.webuploader-container {
+    position: relative;
+}
+
+.webuploader-element-invisible {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+
+.webuploader-container .webuploader-pick {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background: #00b7ee;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.webuploader-container .webuploader-pick-hover {
+    background: #00a2d4;
+}
+
+.webuploader-pick-disable {
+    opacity: 0.6;
+    pointer-events:none;
+}
+
+.input-group-addon.webuploader-container{
+    padding: 0;
+}
+.input-group-addon.webuploader-container label {
+    margin-bottom: 0
+}
+.input-group-addon.webuploader-container input.webuploader-element-invisible{
+    width: 20px
+}
+
+.form-control ~ .input-group-addon {
+  border-left: 0;
+  cursor: pointer;
+}
+
+.webuploader-element-invisible[disabled] ~ label{
+    cursor: not-allowed!important;
+    background-color: #eeeeee;
+}
+
+.form-control[disabled] ~ .input-group-addon .webuploader-pick  {
+    background-color: #eeeeee;
+}
+
+.form-control[disabled] ~ .input-group-addon .webuploader-pick .glyphicon  {
+    color: #a0a0a0;
+}

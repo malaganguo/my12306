@@ -1,0 +1,171 @@
+/**
+         * fish-desktop v3.19.1
+         *
+         * Copyright (c) 2013-present, ZTESoft, Inc.
+         * All rights reserved.
+         *
+         * This source code is licensed under the LGPL-3.0-style license found in the
+         * LICENSE file in the root directory of this source tree. 
+         *
+         */
+.ui-versionline-horizontal {
+  margin-top: 38px;
+  margin-bottom: 50px;
+  height: 0;
+  border: 0;
+  border-top: 3px dashed #dcdcdc;
+}
+.ui-versionline-horizontal .ui-versionline-range {
+  top: -3px;
+  height: 3px;
+}
+.ui-versionline-horizontal .ui-versionline-handle {
+  top: -0.65em;
+  margin-left: -0.6em;
+}
+.ui-versionline-horizontal .ui-versionline-handle-horizontal-tips {
+  display: block;
+  width: 110px;
+  text-align: center;
+  margin-left: -48px;
+  margin-top: 20px;
+}
+.ui-versionline-horizontal .ui-versionline-title {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: -38px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 14px;
+}
+.ui-versionline-horizontal .ui-versionline-status {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+}
+.ui-versionline-horizontal .glyphicon-pencil {
+  right: -45px;
+  top: 20px;
+}
+.ui-versionline-horizontal .glyphicon-remove {
+  right: -60px;
+  top: 20px;
+}
+.ui-versionline-vertical {
+  height: 600px;
+  width: 0;
+  border: 0;
+  border-left: 3px dashed #dcdcdc;
+  margin-left: 70px;
+  margin-bottom: 8px;
+}
+.ui-versionline-vertical .ui-versionline-handle-vertical-tips {
+  margin-left: 20px;
+  display: block;
+  width: 150px;
+}
+.ui-versionline-vertical .ui-versionline-title {
+  margin-top: -0.5em;
+  top: 43%;
+  position: absolute;
+  left: -70px;
+  width: 70px;
+  text-align: center;
+}
+.ui-versionline-vertical .ui-versionline-status {
+  top: 50%;
+  position: absolute;
+  left: -70px;
+  width: 70px;
+  text-align: center;
+}
+.ui-versionline-vertical .ui-versionline-handle {
+  left: -9px;
+}
+.ui-versionline-vertical .ui-versionline-range {
+  width: 3px;
+  left: -3px;
+}
+.ui-versionline-vertical .glyphicon-pencil {
+  right: -105px;
+}
+.ui-versionline {
+  position: relative;
+  border-radius: 0;
+  background-color: transparent;
+}
+.ui-versionline .ui-versionline-range {
+  background-color: #c9c9c8;
+  position: absolute;
+  z-index: 1;
+  font-size: 14px;
+  display: block;
+  border: 0;
+}
+.ui-versionline .ui-versionline-handle {
+  position: absolute;
+  z-index: 2;
+  width: 16px;
+  height: 16px;
+  border: 1px solid;
+  border-radius: 16px;
+  line-height: normal;
+  overflow: visible;
+  background-color: #fff;
+}
+.ui-versionline .ui-versionline-handle .addTime {
+  cursor: pointer;
+}
+.ui-versionline .ui-versionline-handle::before {
+  content: " ";
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+.ui-versionline .editable {
+  color: #2496f5;
+  cursor: pointer;
+}
+.ui-versionline .editable .glyphicon-pencil,
+.ui-versionline .editable .glyphicon-remove {
+  position: absolute;
+}
+.ui-versionline .invalid {
+  border-color: #c3c3c4;
+}
+.ui-versionline .invalid::before {
+  background-color: #959596;
+}
+.ui-versionline .released {
+  border-color: #5faf00;
+}
+.ui-versionline .released::before {
+  background-color: #5faf00;
+}
+.ui-versionline .retired {
+  border-color: #c3c4c4;
+}
+.ui-versionline .retired::before {
+  background-color: #959596;
+}
+.ui-versionline .draft {
+  border-color: #f69d01;
+}
+.ui-versionline .draft::before {
+  background-color: #f69d01;
+}
+.ui-versionline .retired-range {
+  color: #777777;
+}
+.ui-versionline .released-range {
+  color: #4f9001;
+}
+.ui-versionline .draft-range {
+  color: #f69d01;
+}

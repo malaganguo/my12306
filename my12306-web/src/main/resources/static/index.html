@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>浩鲸铁路12306</title>
+    <link rel="icon" href="../images/icon/icon.png">
+    <link rel="stylesheet" href="../fish-desktop/css/fish-desktop-default.css">
+    <link rel="stylesheet" href="../css/cityselect.css">
+    <link rel="stylesheet" href="../css/my12306css.css">
+</head>
+<body>
+    <!--容器-->
+    <div class="container-fluid">
+        <!---头左标题-->
+        <div class="page-header" >
+            <h1 class="logo">
+                <a href="https://www.12306.cn/index/index.html" name="g_href" class="navbar-brand" target="_blank">
+                    <img src="../images/icon/logo.jpg">
+                </a>
+            </h1>
+
+            <!--头搜索栏-->
+            <div class="head-right">
+                <div style="margin:10px 0;" >
+                    <div id="search" class="input-group search-group" data-toggle="searchbar" style="float: left"></div>
+                    <!--右侧菜单-->
+                    <div id="left-navbar" style="float: right;margin-right: 15px">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-ui-role="dropdown" id="my12306dropdown">
+                                    我的12306&nbsp;<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="my12306dropdown" id="my12306dropdownmenu">
+                                    <li>
+                                        <a href="#">火车订票</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">候补订票</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的行程</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的保险</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span style="display: block">您好，请</span>
+                            </li>
+                            <li>
+                                <a href="#">登陆</a>
+                            </li>
+                            <li>
+                                <a href="#">注册</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-------导航栏--------->
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                    <ul class="nav navbar-nav" id="navbar-index">
+                        <li>
+                            <a href="#">首页</a>
+                        </li>
+                        <li class="active dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" >
+                                车票&nbsp;
+                                <span class="caret"/>
+                            </a>
+                        </li>
+                        <li class="dropdown" >
+                            <a href="#" class="dropdown-toggle" data-ui-role="dropdown">
+                                团购服务
+                                <span class="caret"></span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">会员服务&nbsp;<span class="caret"/></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">站车服务&nbsp;<span class="caret"/></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">商旅服务&nbsp;<span class="caret"/></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">出行指南&nbsp;<span class="caret"/></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">信息查询&nbsp;<span class="caret"/></a>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
+        <div class="container" id="ticket-menu">
+            <div class="row" id="small-title">
+                <div class="col-lg-4">
+                    <span>购买</span>
+                </div>
+                <div class="col-lg-4">
+                    <span>变更</span>
+                </div>
+                <div class="col-lg-4">
+                    <span>更多</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <a href="javascript:;">单程</a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="javascript:;">往返</a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="javascript:;">退票</a>
+                </div>
+                <div class="col-lg-2">
+                    <a  href="javascript:;">改签</a>
+                </div>
+                <div class="col-lg-2">
+                    <a  href="javascript:;">中铁银通卡</a>
+                </div>
+                <div class="col-lg-2">
+                    <a  href="javascript:;">广九直通车</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <a  href="javascript:;">接续换成</a>
+                </div>
+                <div class="col-lg-2">
+                    <a>        </a>
+                </div>
+                <div class="col-lg-2">
+                    <a  href="javascript:;">变更到站</a>
+                </div>
+                <div class="col-lg-2">
+                    <a>        </a>
+                </div>
+                <div class="col-lg-2">
+                    <a  href="javascript:;">市郊快速铁路</a>
+                </div>
+                <div class="col-lg-2">
+                    <a  href="javascript:;">国际列车</a>
+                </div>
+            </div>
+        </div>
+        <!-------查询车票栏----->
+        <div class="container" id="query-ticket">
+            <div class="row">
+                <!--单返程-->
+                <div class="dfc" id="dfc-container">
+                    <label>
+                        <input type="radio" name="dfc" value="dc" checked >单程
+                    </label>
+                    <label>
+                        <input type="radio" name="dfc" value="wf">往返
+                    </label>
+                </div>
+                <!--旅行情况-->
+                <div id="place-area" class="s-info">
+                    <!--http://10.45.4.30:3000/fish-desktop/examples/combogrid/index.html-->
+                    <div class="form-group" id="start-area">
+                        <span>
+                            <label style="float: left" for="start-area-input">出发地</label>
+                        </span>
+                        <input type="text" class="cityinput form-control" id="start-area-input" placeholder="简拼/全拼/汉字">
+                    </div>
+                    <div class="form-group" id="dist-area">
+                        <span>
+                            <label style="float: left" for="dist-area-input">目的地</label>
+                        </span>
+                        <input type="text" class="cityinput form-control" id="dist-area-input" placeholder="简拼/全拼/汉字">
+                    </div>
+                    <div class="form-group" id="start-time">
+                        <span>
+                            <label style="float: left" for="start-time-input">出发日</label>
+                        </span>
+                        <input type="text" class="form-control" id="start-time-input" data-today-btn="true" >
+                    </div>
+                    <div class="form-group" id="return-time">
+                        <span>
+                            <label style="float: left" for="return-time-input">返程日</label>
+                        </span>
+                        <input type="text" class="form-control" id="return-time-input" disabled>
+                    </div>
+
+                </div>
+                <!--快速查询-->
+                <div class="quick-s">
+                    <div class="container">
+                        <div class="quick-s-left col-lg-6">
+                            <!--票类型-->
+                            <div class="ticket-type" id="ticket-type">
+                                <label>
+                                    <input type="radio" name="dfc" value="dc">学生
+                                </label>
+                                <label>
+                                    <input type="radio" name="dfc" value="wf">普通
+                                </label>
+                            </div>
+                        </div>
+                        <div class="quick-s-right col-lg-6">
+                            <button type="button" class="btn btn-warning" id="query_button">查询</button>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="grade1" value="Female"> 开启自动查询
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-------班次选择------->
+        <div id="sear-sel" class="container tabs-border ui-tabs">
+            <ul class="ui-tabs-nav">
+                <li>
+                    <a href="#07-25">07-25周四</a>
+                </li>
+                <li>
+                    <a href="#07-26">07-26周五</a>
+                </li>
+                <li>
+                    <a href="#07-27">07-27周六</a>
+                </li>
+            </ul>
+
+            <div id="07-25" class="ui-tabs-panel">
+                <div>
+                    <div class="section-hd">车次类型:</div>
+                    <div class="section-hd">
+                        <button class="btn-block" style="width: 33px;margin-right: 10px" id="trains_type_all">全部</button>
+                    </div>
+                    <div class="_ul_station_train_code" id="trains_type_line">
+                        <label>
+                                <input type="checkbox" name="trains_type" value="GC"> GC-高铁/城
+                        </label>
+                        <label>
+                            <input type="checkbox" name="trains_type" value="D"> D-动车
+                        </label>
+                        <label>
+                            <input type="checkbox" name="trains_type" value="Z"> Z-直达
+                        </label>
+                        <label>
+                            <input type="checkbox" name="trains_type" value="T"> T-特快
+                        </label>
+                        <label>
+                            <input type="checkbox" name="trains_type" value="K"> K-快速
+                        </label>
+                        <label>
+                            <input type="checkbox" name="trains_type" value="Other"> 其他
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="section-hd">出发站点:</div>
+                    <div class="section-hd">
+                        <button class="btn-block" style="width: 33px;margin-right: 10px" id="start_site_all">全部</button>
+                    </div>
+                    <div class="_ul_station_train_code" id="start_site_line">
+                        <label>
+                            <input type="checkbox" name="start_site" value="xianbei"> 西安北
+                        </label>
+                        <label>
+                            <input type="checkbox" name="start_site" value="xiannan"> 西安南
+                        </label>
+                        <label>
+                            <input type="checkbox" name="start_site" value="xian"> 西安
+                        </label>
+                    </div>
+                </div>
+                <!--隐藏的乘车信息-->
+                <div id="extend-ticket">
+                    <div>
+                        <div class="section-hd">乘车人:</div>
+                        <div class="_ul_station_train_code">
+                            <span class="wrap-left">
+                                <a href="javascript:void(0);" class="btn btn-group-sm" id="select_person">请选择</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="section-hd">优先车次:</div>
+                        <div class="_ul_station_train_code">
+                            aaa
+                        </div>
+                    </div>
+                    <div>
+                        <div class="section-hd">优先席别:</div>
+                        <div class="_ul_station_train_code">
+                            aaa
+                        </div>
+                    </div>
+                    <div>
+                        <div class="section-hd">备选日期:</div>
+                        <div class="_ul_station_train_code">
+                            aaa
+                        </div>
+                    </div>
+                    <div>
+                        <div class="section-hd">高级设置:</div>
+                        <div class="_ul_station_train_code">
+                            aaa
+                        </div>
+                    </div>
+                </div>
+                <div class="pos-top">
+                    <label style="float: left">发车时间:</label>
+                    <select name="selectmenu">
+                        <option value="00:00--24:00" selected="selected">00:00--24:00</option>
+                        <option value="00:00--06:00">00:00--06:00</option>
+                        <option value="06:00--12:00">06:00--12:00</option>
+                        <option value="12:00--18:00">12:00--18:00</option>
+                        <option value="18:00--24:00">18:00--24:00</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="07-26" class="ui-tabs-panel">
+
+                <div class="pos-top">
+                    <label style="float: left">发车时间:</label>
+                    <select name="selectmenu">
+                        <option value="00:00--24:00" selected="selected">00:00--24:00</option>
+                        <option value="00:00--06:00">00:00--06:00</option>
+                        <option value="06:00--12:00">06:00--12:00</option>
+                        <option value="12:00--18:00">12:00--18:00</option>
+                        <option value="18:00--24:00">18:00--24:00</option>
+                    </select>
+                </div>
+                <div>
+                    <div class="section-hd">车次类型:</div>
+                    <div class="section-hd">
+                        <button class="btn-block" style="width: 33px;">全部</button>
+                    </div>
+                </div>
+            </div>
+            <div id="07-27" class="ui-tabs-panel">
+                07-27
+                <div class="pos-top">
+                    <label style="float: left">发车时间:</label>
+                    <select name="selectmenu">
+                        <option value="00:00--24:00" selected="selected">00:00--24:00</option>
+                        <option value="00:00--06:00">00:00--06:00</option>
+                        <option value="06:00--12:00">06:00--12:00</option>
+                        <option value="12:00--18:00">12:00--18:00</option>
+                        <option value="18:00--24:00">18:00--24:00</option>
+                    </select>
+                </div>
+            </div>
+            <!--拉下按钮-->
+            <div class="ticket-assist">
+                <button class="btn btn-info" id="ticket-assist">订票助手<span class="caret"/></button>
+            </div>
+            <!--回缩按钮-->
+            <div class="ticket-assist1" style="display: none">
+                <button class="btn btn-info" id="ticket-assist1">订票助手<span class="caret"/></button>
+            </div>
+        </div>
+        <!-------查询结果------->
+        <div class="container">
+            <div class="sear-result">
+                <div class="checkbox" style="float: right">
+                    <label>
+                        <input type="checkbox" name="grade1" value="Female"> 显示积分兑换车次
+                    </label>
+                    <label>
+                        <input type="checkbox" name="grade1" value="Female"> 显示全部可预订车次
+                    </label>
+                </div>
+                <p><strong>北京 --&gt; 福州（7月31日&nbsp;&nbsp;周三）</strong>共计<strong id="trainum">8</strong>个车次</p>
+                <p id="lc_msg">您可使用<a style="color:#07f" href="/otn/lcQuery/init">接续换乘</a>功能，查询途中换乘一次的部分列车余票情况。</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="t-list" id="t-list" style="border: 1px solid #298cce;font-size: 12px;text-overflow: inherit"></div>
+        </div>
+    </div>
+
+</body>
+</html>
+<script src="../js/cityselect.js"></script>
+<script src="../fish-desktop/js/fish-desktop-all.js"></script>
+<script src="../js/my12306Js.js"></script>
+<script src="../js/ajaxdata.js"></script>

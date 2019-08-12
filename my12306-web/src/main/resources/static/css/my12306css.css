@@ -1,0 +1,197 @@
+.page-header {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.logo{
+    float: left;
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+.head-right {
+    float: right;
+    margin: 24px 0 0 0;
+    width: 890px;
+    height: 40px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 500;
+}
+#query-ticket{
+    border:2px solid #298cce;
+    background: #eef1f8;
+    margin-top: 10px;
+    padding: 12px 10px;
+
+}
+#dfc-container{
+    width: 80px;
+    margin-right: 20px;
+    float: left;
+}
+#sear-sel{
+    margin-top: 10px;
+    position: relative;
+}
+.sear-result {
+    height: 23px;
+    line-height: 23px;
+    position: relative;
+    width: 100%;
+    padding: 6px 0;
+}
+.sear-result p{
+    float: left;
+    margin-right: 30px;
+}
+.dfc{
+    width: 80px;
+    margin-right: 20px;
+    background: url("../images/line_sear.png") right center no-repeat;
+}
+.s-info{
+    margin-right: 25px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.quick-s{
+    padding-left: 25px;
+    float: left;
+    width: 260px;
+    height: 65px;
+    overflow: hidden;
+    background: url("../images/line_sear.png") left center no-repeat;
+    margin-top: -5px;
+}
+.quick-s-left{
+    width: 80px;
+    float: left;
+    margin-top: 4px;
+}
+.quick-s-right{
+    width: 98px;
+    height: 58px;
+    overflow: hidden;
+    float: left;
+    margin-top: 0;
+}
+.form-group input{
+    float:left;
+}
+.s-info{
+    margin-right: 25px;
+}
+.s-info div{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+.s-info label{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.s-info input{
+    width: 113px;
+}
+#my12306dropdown{
+    color: #3b99fc;
+    /* display: block;
+     height: 40px;
+     line-height: 40px;*/
+}
+#left-navbar a{
+    display: inline;
+}
+#navbar-index{
+    width: 1190px;
+    margin-left: 200px;
+    margin-right: 250px;
+    height: 40px;
+    position: relative;
+    z-index: 500;
+}
+#navbar-index li{
+    width: 145px;
+    float: left;
+    text-align: center;
+}
+.pos-top{
+    position: absolute;
+    top: 3px;
+    right: 0;
+    z-index: 10;
+    height: 22px;
+    line-height: 22px;
+    margin-right: 20px;
+    float: left;
+}
+.ui-tabs-panel{
+    height: 60px;
+    padding-bottom: 30px;
+    position: relative;
+    padding: 3px 0;
+}
+.section-hd{
+    width: 80px;
+    height: 18px;
+    line-height: 18px;
+    padding: 2px 0;
+    float: left;
+    text-align: right;
+    font-weight: 700;
+}
+._ul_station_train_code label{
+    margin-right: 15px;
+}
+.ticket-assist{
+    top: 58px;
+    right: 1px;
+    position: absolute;
+}
+.ticket-assist1{
+    top: 158px;
+    right: 1px;
+    position: absolute;
+}
+
+.my-dropdown-menu{
+    width: 1150px;
+    text-align: left;
+}
+
+/**下拉菜单**/
+#ticket-menu span{
+    color: #0c82e4;
+}
+#ticket-menu{
+    border: 1px solid #3b99fc;
+    display: none;
+    background-color: #ffffff ;
+    border-color: #0c82e4;
+    float: left;
+    margin-left: 220px;
+    position: absolute;
+    z-index: 1000;
+}
+#ticket-menu a{
+    text-decoration: none;
+    color: #000;
+}
+#ticket-menu>div{
+    margin-bottom: 10px;
+}
+
+/**下拉菜单结束**/
+
+/*隐藏乘车人信息*/
+#extend-ticket{
+    display: none;
+}

@@ -1,0 +1,219 @@
+/**
+         * fish-desktop v3.19.1
+         *
+         * Copyright (c) 2013-present, ZTESoft, Inc.
+         * All rights reserved.
+         *
+         * This source code is licensed under the LGPL-3.0-style license found in the
+         * LICENSE file in the root directory of this source tree. 
+         *
+         */
+.underline,
+.underline-link {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+.underline[disabled] {
+  background-color: #eeeeee;
+  cursor: not-allowed;
+}
+.underline-link:hover,
+.underline-link:focus {
+  text-decoration: none;
+}
+textarea.underline {
+  height: auto;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 3px;
+}
+.ui-sidebar-wrapper {
+  min-height: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.ui-sidebar-left .ui-sidebar-wrapper {
+  float: left;
+}
+.ui-sidebar-right .ui-sidebar-wrapper {
+  float: right;
+}
+.ui-sidebar-toggler-wrapper {
+  cursor: pointer;
+  text-align: right;
+  padding: 10px 15px;
+}
+.ui-sidebar-toggler-wrapper > .glyphicon {
+  color: #f4f3f9;
+}
+.ui-sidebar-closed .ui-sidebar-toggler-wrapper {
+  text-align: left;
+}
+.ui-sidebar {
+  min-height: 100%;
+  background-color: #3a66bf;
+}
+.ui-sidebar .ui-sidebar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.ui-sidebar .ui-sidebar-menu > li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.ui-sidebar .ui-sidebar-menu > li:focus {
+  outline: none;
+}
+.ui-sidebar .ui-sidebar-menu > li > a {
+  border-top: 1px solid #2d5299;
+  color: #f4f3f9;
+  display: block;
+  margin: 0;
+  padding: 10px 15px;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+}
+.ui-sidebar .ui-sidebar-menu > li > a > .icon,
+.ui-sidebar .ui-sidebar-menu .sub-menu > li > a > .icon,
+.ui-sidebar .ui-sidebar-menu .sub-menu .sub-menu > li > a > .icon {
+  width: 20px;
+  margin-right: 8px;
+  text-align: center;
+}
+.ui-sidebar .ui-sidebar-menu > li > a .arrow,
+.ui-sidebar .ui-sidebar-menu .sub-menu > li > a .arrow {
+  position: absolute;
+  margin-top: -6px;
+  top: 50%;
+  right: 10px;
+  font-size: 11px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.ui-sidebar .ui-sidebar-menu > li > a:hover {
+  background-color: #345cab;
+}
+.ui-sidebar .ui-sidebar-menu li.active > a {
+  background-color: #345cab;
+}
+.ui-sidebar .ui-sidebar-menu .sub-menu {
+  list-style: none;
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+.ui-sidebar .ui-sidebar-menu .sub-menu > li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.ui-sidebar .ui-sidebar-menu .sub-menu > li.top-item > a {
+  padding-left: 20px;
+}
+.ui-sidebar .ui-sidebar-menu .sub-menu > li > a {
+  display: block;
+  margin: 0;
+  padding: 10px 15px 10px 43px;
+  text-decoration: none;
+  color: #f4f3f9;
+  border-left: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+}
+.ui-sidebar .ui-sidebar-menu .sub-menu > li > a:hover {
+  background-color: #345cab;
+  border-left-color: transparent;
+}
+.ui-sidebar .ui-sidebar-menu .sub-menu > li:focus {
+  outline: none;
+}
+.ui-sidebar .ui-sidebar-menu .sub-menu .sub-menu > li > a {
+  display: block;
+  margin: 0;
+  padding: 10px 15px 10px 75px;
+  text-decoration: none;
+  color: #f4f3f9;
+  border-left: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ui-sidebar .ui-sidebar-menu .sub-menu .sub-menu > li > a:hover {
+  background-color: #345cab;
+  border-left-color: transparent;
+}
+.ui-sidebar .ui-sidebar-menu .sub-menu .sub-menu > li:focus {
+  outline: none;
+}
+.ui-sidebar .ui-sidebar-menu .pagesidebar-menu > li > a.ui-state-active {
+  background-color: transparent;
+}
+.ui-sidebar .ui-sidebar-menu-closed > li.pagesidebar-item-over {
+  display: block;
+  border: 0;
+}
+.ui-sidebar .ui-sidebar-menu-closed > li.pagesidebar-item-over .sub-menu {
+  width: 210px;
+  z-index: 2000;
+  margin-top: 0;
+  background-color: #3a66bf;
+  border: 0;
+}
+.ui-sidebar .ui-sidebar-menu-closed > li.pagesidebar-item-over .sub-menu .sub-menu {
+  position: relative;
+  display: none;
+  left: 0;
+}
+.ui-sidebar .ui-sidebar-menu-closed > li.pagesidebar-item-over .pagesidebar-menu .sub-menu {
+  position: absolute;
+}
+.ui-sidebar .ui-sidebar-menu-closed > li > a {
+  background-color: #3a66bf;
+}
+.ui-sidebar .ui-sidebar-menu-closed > li > a .icon {
+  margin: 0;
+}
+.ui-sidebar .ui-sidebar-menu-closed > li > a .title,
+.ui-sidebar .ui-sidebar-menu-closed > li > a .arrow {
+  display: none;
+}
+.ui-sidebar .ui-sidebar-menu-closed > li .sub-menu {
+  display: none;
+}
+.ui-sidebar .ui-sidebar-menu-closed .pagesidebar-menu .sub-menu > li > a {
+  padding: 10px 15px;
+}
+.ui-sidebar .pagesidebar-menu li > a.ui-state-focus,
+.ui-sidebar .pagesidebar-menu li > a:hover,
+.ui-sidebar .pagesidebar-menu li > a:focus {
+  background-color: transparent;
+  outline: 0 none;
+}
+.ui-sidebar .pagesidebar-menu .ui-menu-icon {
+  display: none;
+}
