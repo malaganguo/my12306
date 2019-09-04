@@ -54,4 +54,9 @@ public class CheckTicketServiceImpl implements CheckTicketService {
         List<TicketDto> ticketDtosList = ticketMapper.checkTicketByStationAndTime(startArea, distArea, startTime);
         return ticketDtosList;
 	}
+
+	@Override
+	public int countTicket(String startArea, String distArea, String startTime) {
+        return ticketMapper.countTicket(startArea, distArea, startTime);
+	}
 }

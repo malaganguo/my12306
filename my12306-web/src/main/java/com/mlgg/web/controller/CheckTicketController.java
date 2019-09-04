@@ -29,4 +29,10 @@ public class CheckTicketController {
 		List<TicketDto> ticketList = checkTicketService.checkTicket(startArea, distArea, startTime);
 		return ticketList;
 	}
+
+    @GetMapping(value = "/countticket")
+    public int countTicket(@RequestParam("start_area") String startArea, @RequestParam("dist_area") String distArea,
+                                       @RequestParam("start_time") String startTime){
+        return checkTicketService.countTicket(startArea, distArea, startTime);
+    }
 }

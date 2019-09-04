@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <title>浩鲸铁路12306</title>
     <link rel="icon" href="../images/icon/icon.png">
-    <link rel="stylesheet" href="../fish-desktop/css/fish-desktop-default.css">
+    <link rel="stylesheet" href="fish-desktop/css/fish-desktop-default.css">
+    <script src="fish-desktop/js/fish-desktop-all.js"></script>
     <link rel="stylesheet" href="../css/cityselect.css">
-    <link rel="stylesheet" href="../css/my12306css.css">
+    <!--<link rel="stylesheet" href="../css/my12306css.css">-->
+    <script src="fish-desktop/js/fish-desktop-require.js" data-main="main"></script>
 </head>
 <body>
-    <!--容器-->
+    <!--&lt;!&ndash;容器&ndash;&gt;
     <div class="container-fluid">
-        <!---头左标题-->
+        &lt;!&ndash;-头左标题&ndash;&gt;
         <div class="page-header" >
             <h1 class="logo">
                 <a href="https://www.12306.cn/index/index.html" name="g_href" class="navbar-brand" target="_blank">
@@ -19,11 +21,11 @@
                 </a>
             </h1>
 
-            <!--头搜索栏-->
+            &lt;!&ndash;头搜索栏&ndash;&gt;
             <div class="head-right">
                 <div style="margin:10px 0;" >
                     <div id="search" class="input-group search-group" data-toggle="searchbar" style="float: left"></div>
-                    <!--右侧菜单-->
+                    &lt;!&ndash;右侧菜单&ndash;&gt;
                     <div id="left-navbar" style="float: right;margin-right: 15px">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
@@ -61,10 +63,10 @@
             </div>
         </div>
         <br>
-        <!-------导航栏--------->
+        &lt;!&ndash;-&#45;&#45;&#45;&#45;导航栏-&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
         <nav class="navbar navbar-default" role="navigation">
             <div class="container-fluid">
-                <!-- Collect the nav links, forms, and other content for toggling -->
+                &lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;
 
                     <ul class="nav navbar-nav" id="navbar-index">
                         <li>
@@ -153,10 +155,10 @@
                 </div>
             </div>
         </div>
-        <!-------查询车票栏----->
+        &lt;!&ndash;-&#45;&#45;&#45;&#45;查询车票栏-&#45;&#45;&ndash;&gt;
         <div class="container" id="query-ticket">
             <div class="row">
-                <!--单返程-->
+                &lt;!&ndash;单返程&ndash;&gt;
                 <div class="dfc" id="dfc-container">
                     <label>
                         <input type="radio" name="dfc" value="dc" checked >单程
@@ -165,9 +167,9 @@
                         <input type="radio" name="dfc" value="wf">往返
                     </label>
                 </div>
-                <!--旅行情况-->
+                &lt;!&ndash;旅行情况&ndash;&gt;
                 <div id="place-area" class="s-info">
-                    <!--http://10.45.4.30:3000/fish-desktop/examples/combogrid/index.html-->
+                    &lt;!&ndash;http://10.45.4.30:3000/fish-desktop/examples/combogrid/index.html&ndash;&gt;
                     <div class="form-group" id="start-area">
                         <span>
                             <label style="float: left" for="start-area-input">出发地</label>
@@ -194,11 +196,11 @@
                     </div>
 
                 </div>
-                <!--快速查询-->
+                &lt;!&ndash;快速查询&ndash;&gt;
                 <div class="quick-s">
                     <div class="container">
                         <div class="quick-s-left col-lg-6">
-                            <!--票类型-->
+                            &lt;!&ndash;票类型&ndash;&gt;
                             <div class="ticket-type" id="ticket-type">
                                 <label>
                                     <input type="radio" name="dfc" value="dc">学生
@@ -221,7 +223,7 @@
                 </div>
             </div>
         </div>
-        <!-------班次选择------->
+        &lt;!&ndash;-&#45;&#45;&#45;&#45;班次选择-&#45;&#45;&#45;&#45;&ndash;&gt;
         <div id="sear-sel" class="container tabs-border ui-tabs">
             <ul class="ui-tabs-nav">
                 <li>
@@ -279,7 +281,7 @@
                         </label>
                     </div>
                 </div>
-                <!--隐藏的乘车信息-->
+                &lt;!&ndash;隐藏的乘车信息&ndash;&gt;
                 <div id="extend-ticket">
                     <div>
                         <div class="section-hd">乘车人:</div>
@@ -317,11 +319,11 @@
                 <div class="pos-top">
                     <label style="float: left">发车时间:</label>
                     <select name="selectmenu">
-                        <option value="00:00--24:00" selected="selected">00:00--24:00</option>
-                        <option value="00:00--06:00">00:00--06:00</option>
-                        <option value="06:00--12:00">06:00--12:00</option>
-                        <option value="12:00--18:00">12:00--18:00</option>
-                        <option value="18:00--24:00">18:00--24:00</option>
+                        <option value="00:00&#45;&#45;24:00" selected="selected">00:00&#45;&#45;24:00</option>
+                        <option value="00:00&#45;&#45;06:00">00:00&#45;&#45;06:00</option>
+                        <option value="06:00&#45;&#45;12:00">06:00&#45;&#45;12:00</option>
+                        <option value="12:00&#45;&#45;18:00">12:00&#45;&#45;18:00</option>
+                        <option value="18:00&#45;&#45;24:00">18:00&#45;&#45;24:00</option>
                     </select>
                 </div>
             </div>
@@ -331,11 +333,11 @@
                 <div class="pos-top">
                     <label style="float: left">发车时间:</label>
                     <select name="selectmenu">
-                        <option value="00:00--24:00" selected="selected">00:00--24:00</option>
-                        <option value="00:00--06:00">00:00--06:00</option>
-                        <option value="06:00--12:00">06:00--12:00</option>
-                        <option value="12:00--18:00">12:00--18:00</option>
-                        <option value="18:00--24:00">18:00--24:00</option>
+                        <option value="00:00&#45;&#45;24:00" selected="selected">00:00&#45;&#45;24:00</option>
+                        <option value="00:00&#45;&#45;06:00">00:00&#45;&#45;06:00</option>
+                        <option value="06:00&#45;&#45;12:00">06:00&#45;&#45;12:00</option>
+                        <option value="12:00&#45;&#45;18:00">12:00&#45;&#45;18:00</option>
+                        <option value="18:00&#45;&#45;24:00">18:00&#45;&#45;24:00</option>
                     </select>
                 </div>
                 <div>
@@ -350,24 +352,24 @@
                 <div class="pos-top">
                     <label style="float: left">发车时间:</label>
                     <select name="selectmenu">
-                        <option value="00:00--24:00" selected="selected">00:00--24:00</option>
-                        <option value="00:00--06:00">00:00--06:00</option>
-                        <option value="06:00--12:00">06:00--12:00</option>
-                        <option value="12:00--18:00">12:00--18:00</option>
-                        <option value="18:00--24:00">18:00--24:00</option>
+                        <option value="00:00&#45;&#45;24:00" selected="selected">00:00&#45;&#45;24:00</option>
+                        <option value="00:00&#45;&#45;06:00">00:00&#45;&#45;06:00</option>
+                        <option value="06:00&#45;&#45;12:00">06:00&#45;&#45;12:00</option>
+                        <option value="12:00&#45;&#45;18:00">12:00&#45;&#45;18:00</option>
+                        <option value="18:00&#45;&#45;24:00">18:00&#45;&#45;24:00</option>
                     </select>
                 </div>
             </div>
-            <!--拉下按钮-->
+            &lt;!&ndash;拉下按钮&ndash;&gt;
             <div class="ticket-assist">
                 <button class="btn btn-info" id="ticket-assist">订票助手<span class="caret"/></button>
             </div>
-            <!--回缩按钮-->
+            &lt;!&ndash;回缩按钮&ndash;&gt;
             <div class="ticket-assist1" style="display: none">
                 <button class="btn btn-info" id="ticket-assist1">订票助手<span class="caret"/></button>
             </div>
         </div>
-        <!-------查询结果------->
+        &lt;!&ndash;-&#45;&#45;&#45;&#45;查询结果-&#45;&#45;&#45;&#45;&ndash;&gt;
         <div class="container">
             <div class="sear-result">
                 <div class="checkbox" style="float: right">
@@ -378,18 +380,19 @@
                         <input type="checkbox" name="grade1" value="Female"> 显示全部可预订车次
                     </label>
                 </div>
-                <p><strong>北京 --&gt; 福州（7月31日&nbsp;&nbsp;周三）</strong>共计<strong id="trainum">8</strong>个车次</p>
+                <p><strong>北京 &#45;&#45;&gt; 福州（7月31日&nbsp;&nbsp;周三）</strong>共计<strong id="trainum">8</strong>个车次</p>
                 <p id="lc_msg">您可使用<a style="color:#07f" href="/otn/lcQuery/init">接续换乘</a>功能，查询途中换乘一次的部分列车余票情况。</p>
             </div>
         </div>
         <div class="container">
             <div class="t-list" id="t-list" style="border: 1px solid #298cce;font-size: 12px;text-overflow: inherit"></div>
         </div>
-    </div>
+    </div>-->
 
 </body>
 </html>
-<script src="../js/cityselect.js"></script>
-<script src="../fish-desktop/js/fish-desktop-all.js"></script>
+
+<script src="js/cityselect.js"></script>
+<!--
 <script src="../js/my12306Js.js"></script>
-<script src="../js/ajaxdata.js"></script>
+<script src="../js/ajaxdata.js"></script>-->

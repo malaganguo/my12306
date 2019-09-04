@@ -16,6 +16,13 @@ import java.util.List;
  */
 public interface CheckTicketService {
 
-	//查票接口
-	public List<TicketDto> checkTicket(String startArea, String distArea, String startTime);
+	/**
+	 * 	查票接口
+	 */
+	List<TicketDto> checkTicket(String startArea, String distArea, String startTime);
+
+	/**
+	 *  车次统计接口
+	 */
+	int countTicket(String startArea, String distArea, String startTime);
 }
